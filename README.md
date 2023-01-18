@@ -18,7 +18,7 @@ This page will serve as a tool to create readme files.
 
 ## Installation
 
-(walkthrough link)
+https://drive.google.com/file/d/1n4jpiWNfA80FrbJYkivAXISvwOH6ukIv/view
 
 
 ## Usage
