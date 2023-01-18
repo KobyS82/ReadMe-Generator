@@ -33,6 +33,11 @@ inquirer
     ex:"Name, for helping with..., link to their page"`,
     name: 'credits',
     },
+    {
+    type: 'input',
+    message: `What are your instructions?`,
+    name: 'testInstructions',
+    },
   ])
   .then((response) =>
     writeToFile(response)
@@ -40,35 +45,40 @@ inquirer
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    const readMe = `
-    # ${data.title}
+    const readMe = (
+`
+# ${data.title}
 
-    ## Description
+## Description
 
-    This page will serve as ${data.description}
+This page will serve as ${data.description}
 
-    ## Table of contents
+## Table of contents
 
-    -[Installation](#installation)
-    -[Usage](#usage)
-    -[Cradits](#credits)
-
-
-    ## Installation
-
-    ${data.istallation}
+-[Installation](#installation)
+-[Usage](#usage)
+-[Cradits](#credits)
 
 
-    ## Usage
+## Installation
 
-    ${data.usage}
+${data.installation}
 
 
-    ## Credits
+## Usage
 
-    ${data.credits}
+${data.usage}
 
-    `;
+
+## Credits
+
+${data.credits}
+
+## Test Instructions
+
+${data.testInstructions}
+
+`);
     // Change location later
     fs.writeFile('READ-ME.md', readMe, (err) =>
     err ? console.error(err) : console.log('Success!')
