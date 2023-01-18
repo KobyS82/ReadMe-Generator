@@ -1,9 +1,5 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs');
 
-// TODO: Create an array of questions for user input
-const questions = [];
 inquirer
   .prompt([
     {
@@ -44,7 +40,6 @@ inquirer
     writeToFile(response)
   );
 
-// TODO: Create a function to write README file
 function writeToFile(data) {
     const readMe = (
 `
@@ -72,16 +67,18 @@ ${data.installation}
 
 ## Usage
 
-You can download this project off of GitHub at ${data.usage}
+You can download this project off of GitHub at ${data.usage}.
 
 
 ## Credits
 
 ${data.credits}
 
+
 ## Test Instructions
 
 ${data.testInstructions}
+
 
 `);
     // Change location later
@@ -90,8 +87,6 @@ ${data.testInstructions}
 );
 }
 
-// TODO: Create a function to initialize app
 function init() {}
 
-// Function call to initialize app
 init();
