@@ -57,7 +57,8 @@ This page will serve as ${data.description}
 
 -[Installation](#installation)
 -[Usage](#usage)
--[Cradits](#credits)
+-[Credits](#credits)
+-[Test Instructions](#test-instructions)
 
 
 ## Installation
