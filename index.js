@@ -19,12 +19,13 @@ inquirer
     },
     {
       type: 'input',
-      message: 'What are your installation instructions?',
+      message: 'What are your installation instructions? (walkthrough link)',
       name: 'installation',
     },
     {
     type: 'input',
-    message: 'What are your usage instructions?',
+    message: `What are your usage instructions?
+    You can download this project off of GitHub at...`,
     name: 'usage',
     },
     {
@@ -56,8 +57,11 @@ This page will serve as ${data.description}
 ## Table of contents
 
 -[Installation](#installation)
+
 -[Usage](#usage)
+
 -[Credits](#credits)
+
 -[Test Instructions](#test-instructions)
 
 
@@ -68,7 +72,7 @@ ${data.installation}
 
 ## Usage
 
-${data.usage}
+You can download this project off of GitHub at ${data.usage}
 
 
 ## Credits
